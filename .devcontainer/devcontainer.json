@@ -9,7 +9,7 @@
     "remoteEnv": {
       "FLASK_DEBUG": "true",
       "FLASK_APP": "counter:app",
-	  "PORT": 8080,
+	  "PORT": "8080",
 	  "PYTHONIOENCODING": "utf-8"
     },
 	"customizations": {
