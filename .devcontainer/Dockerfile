@@ -1,5 +1,5 @@
 # Image to simulate Skills Network cloud environment
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -10,13 +10,13 @@ RUN apt-get update && \
 
 # Add tools and Python 3.8
 RUN apt-get update && \
-    apt-get install -y sudo vim git zip tree curl wget python3.8-dev python3-pip && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1 && \
+    apt-get install -y sudo vim git zip tree curl wget python3.12-dev python3-pip && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1 && \
     apt-get autoremove -y && \
     apt-get clean -y
 
 # Create a user for development
-ARG USERNAME=theia
+ARG USERNAME=yas
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 

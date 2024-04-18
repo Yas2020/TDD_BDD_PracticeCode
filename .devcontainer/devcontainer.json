@@ -1,11 +1,11 @@
 {
-	"name": "Theia",
+	"name": "Yas",
 	"dockerFile": "Dockerfile",
 	"context": "..",
-	"remoteUser": "theia",
+	"remoteUser": "yas",
 	"workspaceFolder": "/project",
     "workspaceMount": "source=${localWorkspaceFolder},target=/project,type=bind,consistency=delegated",
-    "runArgs": ["-h","theia"],
+    "runArgs": ["-h","yas"],
     "remoteEnv": {
       "FLASK_DEBUG": "true",
       "FLASK_APP": "counter:app",
