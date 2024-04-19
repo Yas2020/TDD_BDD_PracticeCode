@@ -4,7 +4,7 @@ Source code for writing test assertions lab
 
 ## Lab Setup
 
-Install the prerequisite Python packages:
+Install the prerequisite Python packages if want to use nose instead of pytest:
 
 ```bash
 pip install -r requirements.txt

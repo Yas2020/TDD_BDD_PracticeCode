@@ -3,7 +3,7 @@ Account class
 """
 import logging
 from sqlalchemy.sql import func
-from models import db
+from .app import db
 
 logger = logging.getLogger()
 
