@@ -10,8 +10,8 @@ RUN apt-get update && \
 
 # Add tools and Python 3.8
 RUN apt-get update && \
-    apt-get install -y sudo vim git zip tree curl wget python3.12-dev python3-pip && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1 && \
+    apt-get install -y sudo vim git zip tree curl wget python3.11-dev python3-pip && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
     apt-get autoremove -y && \
     apt-get clean -y
 
@@ -30,7 +30,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 # Set up the Python development environment
 WORKDIR /project
 RUN python3 -m pip install --upgrade pip && \
-    pip3 install --upgrade wheel
+    pip3 install --upgrade wheel 
 
 # Enable color terminal for docker exec bash
 ENV TERM=xterm-256color
