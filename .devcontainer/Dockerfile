@@ -30,7 +30,10 @@ RUN groupadd --gid $USER_GID $USERNAME \
 # Set up the Python development environment
 WORKDIR /project
 RUN python3 -m pip install --upgrade pip && \
-    pip3 install --upgrade wheel 
+    pip3 install --upgrade wheel && \
+    export PS1="\[\e]0;\u:\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ "
+
+    
 
 # Enable color terminal for docker exec bash
 ENV TERM=xterm-256color
