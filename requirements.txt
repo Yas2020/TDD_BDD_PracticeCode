@@ -1,17 +1,24 @@
 # Pin dependancies that might cause breakage
-Werkzeug==2.1.2
-SQLAlchemy==1.4.46
+Werkzeug
+SQLAlchemy
 
 # Dependencies for all lab
-Flask==2.1.2
-Flask-SQLAlchemy==2.5.1
-requests==2.31.0
+Flask
+Flask-SQLAlchemy
+requests
 
 # Testing dependencies
 # nose
 # pinocchio
+pytest
 coverage
 factory-boy
 pylint
 pytest-clarity
 pytest-cov
+
+# Behavior Driven Development dependencies
+# behave
+# selenium
+# compare
+

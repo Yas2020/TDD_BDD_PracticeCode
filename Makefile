@@ -9,7 +9,7 @@ all: help
 
 bdd: ## Install pre-requisite software for BDD
 	$(info Install BDD prerequisite software...)
-	sudo apt-get update
+	sudo apt-get updatecd labs/11_generating_ste
 	sudo apt-get install -y sqlite3 chromium-driver python3-selenium
  
 app: ## Run the BDD application

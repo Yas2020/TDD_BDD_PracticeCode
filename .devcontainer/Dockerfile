@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 # Add tools and Python 3.8
 RUN apt-get update && \
-    apt-get install -y sudo vim git zip tree curl wget python3.11-dev python3-pip && \
+    apt-get install -y sudo vim git zip tree curl wget python3.11-dev python3-pip python3.11-venv && \
     update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
     apt-get autoremove -y && \
     apt-get clean -y
