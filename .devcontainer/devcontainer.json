@@ -35,7 +35,7 @@
 			]
 		}
 	},
-	"postCreateCommand": "bash bin/setup_.sh",
+	"postCreateCommand": "bash bin/setup.sh",
 	"features": {
 		"docker-in-docker": "latest"
 	}

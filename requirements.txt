@@ -18,7 +18,8 @@ pytest-clarity
 pytest-cov
 
 # Behavior Driven Development dependencies
-# behave
-# selenium
-# compare
+behave
+selenium
+webdriver-manager
+compare
 

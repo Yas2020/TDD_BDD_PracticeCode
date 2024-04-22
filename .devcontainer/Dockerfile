@@ -3,12 +3,12 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Add repository for Python 3.8
+# Add repository for Python 3.11 
 RUN apt-get update && \
     apt-get install -y software-properties-common dirmngr apt-transport-https lsb-release ca-certificates && \
     add-apt-repository -y ppa:deadsnakes/ppa
 
-# Add tools and Python 3.8
+# Add tools and Python 3.11 and making Python 3.11 the default...
 RUN apt-get update && \
     apt-get install -y sudo vim git zip tree curl wget python3.11-dev python3-pip python3.11-venv && \
     update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
